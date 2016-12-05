@@ -1,0 +1,1282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="@localhost">
+  <database-model serializer="dbm" rdbms="ORACLE" format-version="4.0">
+    <root id="1"/>
+    <schema id="2" parent="1" name="SCOTT">
+      <ObjectId>38</ObjectId>
+      <IntrospectionTimestamp>2016-12-05.22:05:34</IntrospectionTimestamp>
+      <CreatedTimestamp>2016-09-06.19:52:25</CreatedTimestamp>
+      <ModifiedTimestamp>2016-11-10.20:21:41</ModifiedTimestamp>
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="PUBLIC">
+      <ObjectId>1</ObjectId>
+    </schema>
+    <schema id="4" parent="1" name="SYS">
+      <ObjectId>0</ObjectId>
+    </schema>
+    <schema id="5" parent="1" name="SYSTEM">
+      <ObjectId>5</ObjectId>
+    </schema>
+    <schema id="6" parent="1" name="OUTLN">
+      <ObjectId>11</ObjectId>
+    </schema>
+    <schema id="7" parent="1" name="DIP">
+      <ObjectId>18</ObjectId>
+    </schema>
+    <schema id="8" parent="1" name="TSMSYS">
+      <ObjectId>20</ObjectId>
+    </schema>
+    <schema id="9" parent="1" name="DBSNMP">
+      <ObjectId>23</ObjectId>
+    </schema>
+    <schema id="10" parent="1" name="CTXSYS">
+      <ObjectId>25</ObjectId>
+    </schema>
+    <schema id="11" parent="1" name="XDB">
+      <ObjectId>27</ObjectId>
+    </schema>
+    <schema id="12" parent="1" name="ANONYMOUS">
+      <ObjectId>28</ObjectId>
+    </schema>
+    <schema id="13" parent="1" name="MDSYS">
+      <ObjectId>32</ObjectId>
+    </schema>
+    <schema id="14" parent="1" name="HR">
+      <ObjectId>33</ObjectId>
+    </schema>
+    <schema id="15" parent="1" name="FLOWS_FILES">
+      <ObjectId>34</ObjectId>
+    </schema>
+    <schema id="16" parent="1" name="FLOWS_020100">
+      <ObjectId>35</ObjectId>
+    </schema>
+    <schema id="17" parent="1" name="PROJECT">
+      <ObjectId>37</ObjectId>
+    </schema>
+    <sequence id="18" parent="2" name="ADVERTISE_IDX_SEQ">
+      <ObjectId>15562</ObjectId>
+      <CreatedTimestamp>2016-11-10.20:21:41</CreatedTimestamp>
+      <ModifiedTimestamp>2016-11-10.20:21:41</ModifiedTimestamp>
+      <SequenceIdentity>1</SequenceIdentity>
+    </sequence>
+    <sequence id="19" parent="2" name="ATT_ATTIDX_SEQ">
+      <ObjectId>15563</ObjectId>
+      <CreatedTimestamp>2016-11-10.20:21:41</CreatedTimestamp>
+      <ModifiedTimestamp>2016-11-10.20:21:41</ModifiedTimestamp>
+      <SequenceIdentity>1</SequenceIdentity>
+    </sequence>
+    <sequence id="20" parent="2" name="COUNCIL_IDX_SEQ">
+      <ObjectId>15561</ObjectId>
+      <CreatedTimestamp>2016-11-10.20:21:41</CreatedTimestamp>
+      <ModifiedTimestamp>2016-11-10.20:21:41</ModifiedTimestamp>
+      <SequenceIdentity>1</SequenceIdentity>
+    </sequence>
+    <sequence id="21" parent="2" name="CURRICULUM_CURRID_SEQ">
+      <ObjectId>15554</ObjectId>
+      <CreatedTimestamp>2016-11-10.20:21:41</CreatedTimestamp>
+      <ModifiedTimestamp>2016-11-10.20:21:41</ModifiedTimestamp>
+      <SequenceIdentity>1</SequenceIdentity>
+    </sequence>
+    <sequence id="22" parent="2" name="GRADE_GRAIDX_SEQ">
+      <ObjectId>15555</ObjectId>
+      <CreatedTimestamp>2016-11-10.20:21:41</CreatedTimestamp>
+      <ModifiedTimestamp>2016-11-10.20:21:41</ModifiedTimestamp>
+      <SequenceIdentity>1</SequenceIdentity>
+    </sequence>
+    <sequence id="23" parent="2" name="LECAPP_APPIDX_SEQ">
+      <ObjectId>15565</ObjectId>
+      <CreatedTimestamp>2016-11-10.20:21:41</CreatedTimestamp>
+      <ModifiedTimestamp>2016-11-10.20:21:41</ModifiedTimestamp>
+      <SequenceIdentity>1</SequenceIdentity>
+    </sequence>
+    <sequence id="24" parent="2" name="NOTICE_IDX_SEQ">
+      <ObjectId>15556</ObjectId>
+      <CreatedTimestamp>2016-11-10.20:21:41</CreatedTimestamp>
+      <ModifiedTimestamp>2016-11-10.20:21:41</ModifiedTimestamp>
+      <SequenceIdentity>1</SequenceIdentity>
+    </sequence>
+    <sequence id="25" parent="2" name="PRO_PROIDX_SEQ">
+      <ObjectId>15564</ObjectId>
+      <CreatedTimestamp>2016-11-10.20:21:41</CreatedTimestamp>
+      <ModifiedTimestamp>2016-11-10.20:21:41</ModifiedTimestamp>
+      <SequenceIdentity>1</SequenceIdentity>
+    </sequence>
+    <sequence id="26" parent="2" name="STSATT_IDX_SEQ">
+      <ObjectId>15558</ObjectId>
+      <CreatedTimestamp>2016-11-10.20:21:41</CreatedTimestamp>
+      <ModifiedTimestamp>2016-11-10.20:21:41</ModifiedTimestamp>
+      <SequenceIdentity>1</SequenceIdentity>
+    </sequence>
+    <sequence id="27" parent="2" name="STSGRA_IDX_SEQ">
+      <ObjectId>15557</ObjectId>
+      <CreatedTimestamp>2016-11-10.20:21:41</CreatedTimestamp>
+      <ModifiedTimestamp>2016-11-10.20:21:41</ModifiedTimestamp>
+      <SequenceIdentity>1</SequenceIdentity>
+    </sequence>
+    <sequence id="28" parent="2" name="STSPRO_IDX_SEQ">
+      <ObjectId>15560</ObjectId>
+      <CreatedTimestamp>2016-11-10.20:21:41</CreatedTimestamp>
+      <ModifiedTimestamp>2016-11-10.20:21:41</ModifiedTimestamp>
+      <SequenceIdentity>1</SequenceIdentity>
+    </sequence>
+    <sequence id="29" parent="2" name="STSTOT_IDX_SEQ">
+      <ObjectId>15559</ObjectId>
+      <CreatedTimestamp>2016-11-10.20:21:41</CreatedTimestamp>
+      <ModifiedTimestamp>2016-11-10.20:21:41</ModifiedTimestamp>
+      <SequenceIdentity>1</SequenceIdentity>
+    </sequence>
+    <table id="30" parent="2" name="ADVERTISE">
+      <ObjectId>15544</ObjectId>
+      <CreatedTimestamp>2016-11-10.20:20:31</CreatedTimestamp>
+      <ModifiedTimestamp>2016-11-10.20:21:22</ModifiedTimestamp>
+    </table>
+    <table id="31" parent="2" name="ATT">
+      <ObjectId>15546</ObjectId>
+      <CreatedTimestamp>2016-11-10.20:20:34</CreatedTimestamp>
+      <ModifiedTimestamp>2016-11-10.20:21:24</ModifiedTimestamp>
+    </table>
+    <table id="32" parent="2" name="BONUS">
+      <ObjectId>14126</ObjectId>
+      <CreatedTimestamp>2016-09-06.19:52:25</CreatedTimestamp>
+      <ModifiedTimestamp>2016-09-06.19:52:25</ModifiedTimestamp>
+    </table>
+    <table id="33" parent="2" name="COUNCIL">
+      <ObjectId>15542</ObjectId>
+      <CreatedTimestamp>2016-11-10.20:20:29</CreatedTimestamp>
+      <ModifiedTimestamp>2016-11-10.20:21:18</ModifiedTimestamp>
+    </table>
+    <table id="34" parent="2" name="CURRICULUM">
+      <ObjectId>15526</ObjectId>
+      <CreatedTimestamp>2016-11-10.20:20:02</CreatedTimestamp>
+      <ModifiedTimestamp>2016-11-10.20:20:47</ModifiedTimestamp>
+    </table>
+    <table id="35" parent="2" name="DEPT">
+      <ObjectId>14127</ObjectId>
+      <CreatedTimestamp>2016-09-06.19:52:25</CreatedTimestamp>
+      <ModifiedTimestamp>2016-09-06.19:52:25</ModifiedTimestamp>
+    </table>
+    <table id="36" parent="2" name="EMP">
+      <ObjectId>14129</ObjectId>
+      <CreatedTimestamp>2016-09-06.19:52:25</CreatedTimestamp>
+      <ModifiedTimestamp>2016-09-06.19:52:25</ModifiedTimestamp>
+    </table>
+    <table id="37" parent="2" name="GRADE">
+      <ObjectId>15528</ObjectId>
+      <CreatedTimestamp>2016-11-10.20:20:09</CreatedTimestamp>
+      <ModifiedTimestamp>2016-11-10.20:20:50</ModifiedTimestamp>
+    </table>
+    <table id="38" parent="2" name="GUEST">
+      <ObjectId>14132</ObjectId>
+      <CreatedTimestamp>2016-09-06.19:56:05</CreatedTimestamp>
+      <ModifiedTimestamp>2016-09-06.19:56:05</ModifiedTimestamp>
+    </table>
+    <table id="39" parent="2" name="LECAPP">
+      <ObjectId>15550</ObjectId>
+      <CreatedTimestamp>2016-11-10.20:20:40</CreatedTimestamp>
+      <ModifiedTimestamp>2016-11-10.20:21:33</ModifiedTimestamp>
+    </table>
+    <table id="40" parent="2" name="LECTURE">
+      <ObjectId>15532</ObjectId>
+      <CreatedTimestamp>2016-11-10.20:20:16</CreatedTimestamp>
+      <ModifiedTimestamp>2016-11-10.20:20:59</ModifiedTimestamp>
+    </table>
+    <table id="41" parent="2" name="MEMBER">
+      <ObjectId>15552</ObjectId>
+      <CreatedTimestamp>2016-11-10.20:20:42</CreatedTimestamp>
+      <ModifiedTimestamp>2016-11-10.20:20:42</ModifiedTimestamp>
+    </table>
+    <table id="42" parent="2" name="NOTICE">
+      <ObjectId>15530</ObjectId>
+      <CreatedTimestamp>2016-11-10.20:20:13</CreatedTimestamp>
+      <ModifiedTimestamp>2016-11-10.20:20:53</ModifiedTimestamp>
+    </table>
+    <table id="43" parent="2" name="PRO">
+      <ObjectId>15548</ObjectId>
+      <CreatedTimestamp>2016-11-10.20:20:37</CreatedTimestamp>
+      <ModifiedTimestamp>2016-11-10.20:21:29</ModifiedTimestamp>
+    </table>
+    <table id="44" parent="2" name="SALGRADE">
+      <ObjectId>14131</ObjectId>
+      <CreatedTimestamp>2016-09-06.19:52:25</CreatedTimestamp>
+      <ModifiedTimestamp>2016-09-06.19:52:25</ModifiedTimestamp>
+    </table>
+    <table id="45" parent="2" name="STSATT">
+      <ObjectId>15536</ObjectId>
+      <CreatedTimestamp>2016-11-10.20:20:22</CreatedTimestamp>
+      <ModifiedTimestamp>2016-11-10.20:21:06</ModifiedTimestamp>
+    </table>
+    <table id="46" parent="2" name="STSGRA">
+      <ObjectId>15534</ObjectId>
+      <CreatedTimestamp>2016-11-10.20:20:19</CreatedTimestamp>
+      <ModifiedTimestamp>2016-11-10.20:21:01</ModifiedTimestamp>
+    </table>
+    <table id="47" parent="2" name="STSPRO">
+      <ObjectId>15540</ObjectId>
+      <CreatedTimestamp>2016-11-10.20:20:26</CreatedTimestamp>
+      <ModifiedTimestamp>2016-11-10.20:21:16</ModifiedTimestamp>
+    </table>
+    <table id="48" parent="2" name="STSTOT">
+      <ObjectId>15538</ObjectId>
+      <CreatedTimestamp>2016-11-10.20:20:24</CreatedTimestamp>
+      <ModifiedTimestamp>2016-11-10.20:20:24</ModifiedTimestamp>
+    </table>
+    <column id="49" parent="30" name="IDX">
+      <Position>1</Position>
+      <DataType>NUMBER(5)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="50" parent="30" name="REGID">
+      <Position>2</Position>
+      <DataType>VARCHAR2(80)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="51" parent="30" name="REGNAME">
+      <Position>3</Position>
+      <DataType>VARCHAR2(100)|0</DataType>
+    </column>
+    <column id="52" parent="30" name="UPLOADPATH">
+      <Position>4</Position>
+      <DataType>VARCHAR2(200)|0</DataType>
+    </column>
+    <column id="53" parent="30" name="FILENAME">
+      <Position>5</Position>
+      <DataType>VARCHAR2(100)|0</DataType>
+    </column>
+    <column id="54" parent="30" name="FULLNAME">
+      <Position>6</Position>
+      <DataType>VARCHAR2(300)|0</DataType>
+    </column>
+    <column id="55" parent="30" name="PERMIT">
+      <Position>7</Position>
+      <DataType>VARCHAR2(5)|0</DataType>
+      <DefaultExpression>&apos;N&apos;</DefaultExpression>
+    </column>
+    <column id="56" parent="30" name="REVSTART">
+      <Position>8</Position>
+      <DataType>DATE|0</DataType>
+    </column>
+    <column id="57" parent="30" name="REVEND">
+      <Position>9</Position>
+      <DataType>DATE|0</DataType>
+    </column>
+    <column id="58" parent="30" name="REGDATE">
+      <Position>10</Position>
+      <DataType>DATE|0</DataType>
+      <DefaultExpression>SYSDATE
+</DefaultExpression>
+    </column>
+    <index id="59" parent="30" name="SYS_C004325">
+      <ObjectId>15545</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2016-11-10.20:20:31</CreatedTimestamp>
+      <ModifiedTimestamp>2016-11-10.20:20:31</ModifiedTimestamp>
+      <TablespaceName>SYSTEM</TablespaceName>
+      <ColNames>IDX</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="60" parent="30" name="SYS_C004325">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2016-11-10.20:20:31</ModifiedTimestamp>
+      <ColNames>IDX</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>SYS_C004325</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="61" parent="30" name="ADVERTISE_REGID_FK">
+      <ModifiedTimestamp>2016-11-10.20:21:22</ModifiedTimestamp>
+      <ColNames>REGID</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <RefTableName>MEMBER</RefTableName>
+      <RefKeyName>SYS_C004337</RefKeyName>
+    </foreign-key>
+    <column id="62" parent="31" name="ATTIDX">
+      <Position>1</Position>
+      <DataType>NUMBER(5)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="63" parent="31" name="USERID">
+      <Position>2</Position>
+      <DataType>VARCHAR2(80)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="64" parent="31" name="ATTDATE">
+      <Position>3</Position>
+      <DataType>DATE|0</DataType>
+      <DefaultExpression>SYSDATE
+</DefaultExpression>
+    </column>
+    <index id="65" parent="31" name="SYS_C004328">
+      <ObjectId>15547</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2016-11-10.20:20:34</CreatedTimestamp>
+      <ModifiedTimestamp>2016-11-10.20:20:34</ModifiedTimestamp>
+      <TablespaceName>SYSTEM</TablespaceName>
+      <ColNames>ATTIDX</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="66" parent="31" name="SYS_C004328">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2016-11-10.20:20:34</ModifiedTimestamp>
+      <ColNames>ATTIDX</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>SYS_C004328</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="67" parent="31" name="ATT_USERID_FK">
+      <ModifiedTimestamp>2016-11-10.20:21:24</ModifiedTimestamp>
+      <ColNames>USERID</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <RefTableName>MEMBER</RefTableName>
+      <RefKeyName>SYS_C004337</RefKeyName>
+    </foreign-key>
+    <column id="68" parent="32" name="ENAME">
+      <Position>1</Position>
+      <DataType>VARCHAR2(10)|0</DataType>
+    </column>
+    <column id="69" parent="32" name="JOB">
+      <Position>2</Position>
+      <DataType>VARCHAR2(9)|0</DataType>
+    </column>
+    <column id="70" parent="32" name="SAL">
+      <Position>3</Position>
+      <DataType>NUMBER(*)|0</DataType>
+    </column>
+    <column id="71" parent="32" name="COMM">
+      <Position>4</Position>
+      <DataType>NUMBER(*)|0</DataType>
+    </column>
+    <column id="72" parent="33" name="IDX">
+      <Position>1</Position>
+      <DataType>NUMBER(5)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="73" parent="33" name="AID">
+      <Position>2</Position>
+      <DataType>VARCHAR2(80)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="74" parent="33" name="WID">
+      <Position>3</Position>
+      <DataType>VARCHAR2(80)|0</DataType>
+    </column>
+    <column id="75" parent="33" name="ANAME">
+      <Position>4</Position>
+      <DataType>VARCHAR2(100)|0</DataType>
+    </column>
+    <column id="76" parent="33" name="WNAME">
+      <Position>5</Position>
+      <DataType>VARCHAR2(100)|0</DataType>
+    </column>
+    <column id="77" parent="33" name="WEMAIL">
+      <Position>6</Position>
+      <DataType>VARCHAR2(80)|0</DataType>
+    </column>
+    <column id="78" parent="33" name="WTEL">
+      <Position>7</Position>
+      <DataType>VARCHAR2(20)|0</DataType>
+    </column>
+    <column id="79" parent="33" name="WTITLE">
+      <Position>8</Position>
+      <DataType>VARCHAR2(250)|0</DataType>
+    </column>
+    <column id="80" parent="33" name="WCONTENT">
+      <Position>9</Position>
+      <DataType>VARCHAR2(1000)|0</DataType>
+    </column>
+    <column id="81" parent="33" name="WREGDATE">
+      <Position>10</Position>
+      <DataType>DATE|0</DataType>
+    </column>
+    <column id="82" parent="33" name="ATITLE">
+      <Position>11</Position>
+      <DataType>VARCHAR2(250)|0</DataType>
+    </column>
+    <column id="83" parent="33" name="AREGDATE">
+      <Position>12</Position>
+      <DataType>DATE|0</DataType>
+    </column>
+    <column id="84" parent="33" name="STATE">
+      <Position>13</Position>
+      <DataType>VARCHAR2(50)|0</DataType>
+    </column>
+    <column id="85" parent="33" name="ACONTENT">
+      <Position>14</Position>
+      <DataType>VARCHAR2(1000)|0</DataType>
+    </column>
+    <index id="86" parent="33" name="SYS_C004322">
+      <ObjectId>15543</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2016-11-10.20:20:29</CreatedTimestamp>
+      <ModifiedTimestamp>2016-11-10.20:20:29</ModifiedTimestamp>
+      <TablespaceName>SYSTEM</TablespaceName>
+      <ColNames>IDX</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="87" parent="33" name="SYS_C004322">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2016-11-10.20:20:29</ModifiedTimestamp>
+      <ColNames>IDX</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>SYS_C004322</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="88" parent="33" name="COUNCIL_AID_FK">
+      <ModifiedTimestamp>2016-11-10.20:21:18</ModifiedTimestamp>
+      <ColNames>AID</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <RefTableName>MEMBER</RefTableName>
+      <RefKeyName>SYS_C004337</RefKeyName>
+    </foreign-key>
+    <column id="89" parent="34" name="CURRID">
+      <Position>1</Position>
+      <DataType>NUMBER(5)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="90" parent="34" name="USERID">
+      <Position>2</Position>
+      <DataType>VARCHAR2(80)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="91" parent="34" name="TITLE">
+      <Position>3</Position>
+      <DataType>VARCHAR2(200)|0</DataType>
+    </column>
+    <column id="92" parent="34" name="NUMOFPERSON">
+      <Position>4</Position>
+      <DataType>NUMBER(5)|0</DataType>
+    </column>
+    <column id="93" parent="34" name="CONTENT">
+      <Position>5</Position>
+      <DataType>VARCHAR2(2000)|0</DataType>
+    </column>
+    <column id="94" parent="34" name="CLASSCNT">
+      <Position>6</Position>
+      <DataType>NUMBER(5)|0</DataType>
+    </column>
+    <column id="95" parent="34" name="CURRDATE">
+      <Position>7</Position>
+      <DataType>DATE|0</DataType>
+      <DefaultExpression>SYSDATE
+</DefaultExpression>
+    </column>
+    <index id="96" parent="34" name="SYS_C004299">
+      <ObjectId>15527</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2016-11-10.20:20:02</CreatedTimestamp>
+      <ModifiedTimestamp>2016-11-10.20:20:02</ModifiedTimestamp>
+      <TablespaceName>SYSTEM</TablespaceName>
+      <ColNames>CURRID</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="97" parent="34" name="SYS_C004299">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2016-11-10.20:20:02</ModifiedTimestamp>
+      <ColNames>CURRID</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>SYS_C004299</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="98" parent="34" name="CURRICULUM_FK">
+      <ModifiedTimestamp>2016-11-10.20:20:47</ModifiedTimestamp>
+      <ColNames>USERID</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <RefTableName>MEMBER</RefTableName>
+      <RefKeyName>SYS_C004337</RefKeyName>
+    </foreign-key>
+    <column id="99" parent="35" name="DEPTNO">
+      <Position>1</Position>
+      <DataType>NUMBER(2)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="100" parent="35" name="DNAME">
+      <Position>2</Position>
+      <DataType>VARCHAR2(14)|0</DataType>
+    </column>
+    <column id="101" parent="35" name="LOC">
+      <Position>3</Position>
+      <DataType>VARCHAR2(13)|0</DataType>
+    </column>
+    <index id="102" parent="35" name="PK_DEPT">
+      <ObjectId>14128</ObjectId>
+      <CreatedTimestamp>2016-09-06.19:52:25</CreatedTimestamp>
+      <ModifiedTimestamp>2016-09-06.19:52:25</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>DEPTNO</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="103" parent="35" name="PK_DEPT">
+      <ModifiedTimestamp>2016-09-06.19:52:25</ModifiedTimestamp>
+      <ColNames>DEPTNO</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>PK_DEPT</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="104" parent="36" name="EMPNO">
+      <Position>1</Position>
+      <DataType>NUMBER(4)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="105" parent="36" name="ENAME">
+      <Position>2</Position>
+      <DataType>VARCHAR2(10)|0</DataType>
+    </column>
+    <column id="106" parent="36" name="JOB">
+      <Position>3</Position>
+      <DataType>VARCHAR2(9)|0</DataType>
+    </column>
+    <column id="107" parent="36" name="MGR">
+      <Position>4</Position>
+      <DataType>NUMBER(4)|0</DataType>
+    </column>
+    <column id="108" parent="36" name="HIREDATE">
+      <Position>5</Position>
+      <DataType>DATE|0</DataType>
+    </column>
+    <column id="109" parent="36" name="SAL">
+      <Position>6</Position>
+      <DataType>NUMBER(7,2)|0</DataType>
+    </column>
+    <column id="110" parent="36" name="COMM">
+      <Position>7</Position>
+      <DataType>NUMBER(7,2)|0</DataType>
+    </column>
+    <column id="111" parent="36" name="DEPTNO">
+      <Position>8</Position>
+      <DataType>NUMBER(2)|0</DataType>
+    </column>
+    <index id="112" parent="36" name="PK_EMP">
+      <ObjectId>14130</ObjectId>
+      <CreatedTimestamp>2016-09-06.19:52:25</CreatedTimestamp>
+      <ModifiedTimestamp>2016-09-06.19:52:25</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>EMPNO</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="113" parent="36" name="PK_EMP">
+      <ModifiedTimestamp>2016-09-06.19:52:25</ModifiedTimestamp>
+      <ColNames>EMPNO</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>PK_EMP</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="114" parent="36" name="FK_DEPTNO">
+      <ModifiedTimestamp>2016-09-06.19:52:25</ModifiedTimestamp>
+      <ColNames>DEPTNO</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <RefTableName>DEPT</RefTableName>
+      <RefKeyName>PK_DEPT</RefKeyName>
+    </foreign-key>
+    <column id="115" parent="37" name="GRAIDX">
+      <Position>1</Position>
+      <DataType>NUMBER(5)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="116" parent="37" name="CURRID">
+      <Position>2</Position>
+      <DataType>NUMBER(5)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="117" parent="37" name="USERID">
+      <Position>3</Position>
+      <DataType>VARCHAR2(80)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="118" parent="37" name="STUID">
+      <Position>4</Position>
+      <DataType>VARCHAR2(80)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="119" parent="37" name="SCORE">
+      <Position>5</Position>
+      <DataType>NUMBER(10)|0</DataType>
+    </column>
+    <column id="120" parent="37" name="GRADATE">
+      <Position>6</Position>
+      <DataType>DATE|0</DataType>
+      <DefaultExpression>SYSDATE
+</DefaultExpression>
+    </column>
+    <index id="121" parent="37" name="SYS_C004304">
+      <ObjectId>15529</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2016-11-10.20:20:09</CreatedTimestamp>
+      <ModifiedTimestamp>2016-11-10.20:20:09</ModifiedTimestamp>
+      <TablespaceName>SYSTEM</TablespaceName>
+      <ColNames>GRAIDX</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="122" parent="37" name="SYS_C004304">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2016-11-10.20:20:09</ModifiedTimestamp>
+      <ColNames>GRAIDX</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>SYS_C004304</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="123" parent="37" name="GRADE_FK">
+      <ModifiedTimestamp>2016-11-10.20:20:49</ModifiedTimestamp>
+      <ColNames>CURRID</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <RefTableName>CURRICULUM</RefTableName>
+      <RefKeyName>SYS_C004299</RefKeyName>
+    </foreign-key>
+    <foreign-key id="124" parent="37" name="GRADE_USERID_FK">
+      <ModifiedTimestamp>2016-11-10.20:20:50</ModifiedTimestamp>
+      <ColNames>USERID</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <RefTableName>MEMBER</RefTableName>
+      <RefKeyName>SYS_C004337</RefKeyName>
+    </foreign-key>
+    <column id="125" parent="38" name="SABUN">
+      <Position>1</Position>
+      <DataType>NUMBER(*)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="126" parent="38" name="NAME">
+      <Position>2</Position>
+      <DataType>VARCHAR2(50)|0</DataType>
+    </column>
+    <column id="127" parent="38" name="NALJA">
+      <Position>3</Position>
+      <DataType>DATE|0</DataType>
+    </column>
+    <column id="128" parent="38" name="PAY">
+      <Position>4</Position>
+      <DataType>NUMBER(*)|0</DataType>
+    </column>
+    <index id="129" parent="38" name="SYS_C004061">
+      <ObjectId>14133</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2016-09-06.19:56:05</CreatedTimestamp>
+      <ModifiedTimestamp>2016-09-06.19:56:05</ModifiedTimestamp>
+      <TablespaceName>SYSTEM</TablespaceName>
+      <ColNames>SABUN</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="130" parent="38" name="SYS_C004061">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2016-09-06.19:56:05</ModifiedTimestamp>
+      <ColNames>SABUN</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>SYS_C004061</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="131" parent="39" name="APPIDX">
+      <Position>1</Position>
+      <DataType>NUMBER(5)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="132" parent="39" name="USERID">
+      <Position>2</Position>
+      <DataType>VARCHAR2(80)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="133" parent="39" name="CURRID">
+      <Position>3</Position>
+      <DataType>NUMBER(5)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="134" parent="39" name="PERMIT">
+      <Position>4</Position>
+      <DataType>VARCHAR2(5)|0</DataType>
+      <DefaultExpression>&apos;N&apos;</DefaultExpression>
+    </column>
+    <column id="135" parent="39" name="APPDATE">
+      <Position>5</Position>
+      <DataType>DATE|0</DataType>
+      <DefaultExpression>SYSDATE
+</DefaultExpression>
+    </column>
+    <index id="136" parent="39" name="SYS_C004335">
+      <ObjectId>15551</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2016-11-10.20:20:40</CreatedTimestamp>
+      <ModifiedTimestamp>2016-11-10.20:20:40</ModifiedTimestamp>
+      <TablespaceName>SYSTEM</TablespaceName>
+      <ColNames>APPIDX</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="137" parent="39" name="SYS_C004335">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2016-11-10.20:20:40</ModifiedTimestamp>
+      <ColNames>APPIDX</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>SYS_C004335</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="138" parent="39" name="LECAPP_USERID_FK">
+      <ModifiedTimestamp>2016-11-10.20:21:32</ModifiedTimestamp>
+      <ColNames>USERID</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <RefTableName>MEMBER</RefTableName>
+      <RefKeyName>SYS_C004337</RefKeyName>
+    </foreign-key>
+    <foreign-key id="139" parent="39" name="LECAPP_CURRID_FK">
+      <ModifiedTimestamp>2016-11-10.20:21:33</ModifiedTimestamp>
+      <ColNames>CURRID</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <RefTableName>CURRICULUM</RefTableName>
+      <RefKeyName>SYS_C004299</RefKeyName>
+    </foreign-key>
+    <column id="140" parent="40" name="LECID">
+      <Position>1</Position>
+      <DataType>NUMBER(5)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="141" parent="40" name="USERID">
+      <Position>2</Position>
+      <DataType>VARCHAR2(80)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="142" parent="40" name="CURRID">
+      <Position>3</Position>
+      <DataType>NUMBER(5)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="143" parent="40" name="TITLE">
+      <Position>4</Position>
+      <DataType>VARCHAR2(200)|0</DataType>
+    </column>
+    <column id="144" parent="40" name="CATEGORY">
+      <Position>5</Position>
+      <DataType>VARCHAR2(200)|0</DataType>
+    </column>
+    <column id="145" parent="40" name="OPEN">
+      <Position>6</Position>
+      <DataType>VARCHAR2(5)|0</DataType>
+    </column>
+    <column id="146" parent="40" name="COUNT">
+      <Position>7</Position>
+      <DataType>NUMBER(5)|0</DataType>
+    </column>
+    <column id="147" parent="40" name="CONTENT">
+      <Position>8</Position>
+      <DataType>VARCHAR2(2000)|0</DataType>
+    </column>
+    <column id="148" parent="40" name="ORIFILENAME">
+      <Position>9</Position>
+      <DataType>VARCHAR2(300)|0</DataType>
+    </column>
+    <column id="149" parent="40" name="REFILENAME">
+      <Position>10</Position>
+      <DataType>VARCHAR2(300)|0</DataType>
+    </column>
+    <column id="150" parent="40" name="LECDATE">
+      <Position>11</Position>
+      <DataType>DATE|0</DataType>
+      <DefaultExpression>SYSDATE
+</DefaultExpression>
+    </column>
+    <index id="151" parent="40" name="SYS_C004311">
+      <ObjectId>15533</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2016-11-10.20:20:16</CreatedTimestamp>
+      <ModifiedTimestamp>2016-11-10.20:20:16</ModifiedTimestamp>
+      <TablespaceName>SYSTEM</TablespaceName>
+      <ColNames>LECID</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="152" parent="40" name="SYS_C004311">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2016-11-10.20:20:16</ModifiedTimestamp>
+      <ColNames>LECID</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>SYS_C004311</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="153" parent="40" name="LECTURE_USERID_FK">
+      <ModifiedTimestamp>2016-11-10.20:20:56</ModifiedTimestamp>
+      <ColNames>USERID</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <RefTableName>MEMBER</RefTableName>
+      <RefKeyName>SYS_C004337</RefKeyName>
+    </foreign-key>
+    <foreign-key id="154" parent="40" name="LECTURE_CURRID_FK">
+      <ModifiedTimestamp>2016-11-10.20:20:59</ModifiedTimestamp>
+      <ColNames>CURRID</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <RefTableName>CURRICULUM</RefTableName>
+      <RefKeyName>SYS_C004299</RefKeyName>
+    </foreign-key>
+    <column id="155" parent="41" name="USERID">
+      <Position>1</Position>
+      <DataType>VARCHAR2(80)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="156" parent="41" name="NAME">
+      <Position>2</Position>
+      <DataType>VARCHAR2(100)|0</DataType>
+    </column>
+    <column id="157" parent="41" name="BIRTH">
+      <Position>3</Position>
+      <DataType>VARCHAR2(15)|0</DataType>
+    </column>
+    <column id="158" parent="41" name="PHONE">
+      <Position>4</Position>
+      <DataType>VARCHAR2(20)|0</DataType>
+    </column>
+    <column id="159" parent="41" name="PWD">
+      <Position>5</Position>
+      <DataType>VARCHAR2(80)|0</DataType>
+    </column>
+    <column id="160" parent="41" name="PERMIT">
+      <Position>6</Position>
+      <DataType>VARCHAR2(5)|0</DataType>
+      <DefaultExpression>&apos;N&apos;</DefaultExpression>
+    </column>
+    <column id="161" parent="41" name="EMAIL">
+      <Position>7</Position>
+      <DataType>VARCHAR2(80)|0</DataType>
+    </column>
+    <column id="162" parent="41" name="POSITION">
+      <Position>8</Position>
+      <DataType>VARCHAR2(100)|0</DataType>
+    </column>
+    <column id="163" parent="41" name="CNT">
+      <Position>9</Position>
+      <DataType>NUMBER(25)|0</DataType>
+    </column>
+    <column id="164" parent="41" name="LOGINTIME">
+      <Position>10</Position>
+      <DataType>DATE|0</DataType>
+      <DefaultExpression>SYSDATE</DefaultExpression>
+    </column>
+    <column id="165" parent="41" name="REGID">
+      <Position>11</Position>
+      <DataType>VARCHAR2(80)|0</DataType>
+    </column>
+    <column id="166" parent="41" name="REGDATE">
+      <Position>12</Position>
+      <DataType>DATE|0</DataType>
+      <DefaultExpression>SYSDATE
+</DefaultExpression>
+    </column>
+    <index id="167" parent="41" name="SYS_C004337">
+      <ObjectId>15553</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2016-11-10.20:20:42</CreatedTimestamp>
+      <ModifiedTimestamp>2016-11-10.20:20:42</ModifiedTimestamp>
+      <TablespaceName>SYSTEM</TablespaceName>
+      <ColNames>USERID</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="168" parent="41" name="SYS_C004337">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2016-11-10.20:20:42</ModifiedTimestamp>
+      <ColNames>USERID</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>SYS_C004337</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="169" parent="42" name="IDX">
+      <Position>1</Position>
+      <DataType>NUMBER(5)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="170" parent="42" name="USERID">
+      <Position>2</Position>
+      <DataType>VARCHAR2(80)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="171" parent="42" name="SUBJECT">
+      <Position>3</Position>
+      <DataType>VARCHAR2(200)|0</DataType>
+    </column>
+    <column id="172" parent="42" name="CONTENT">
+      <Position>4</Position>
+      <DataType>VARCHAR2(2000)|0</DataType>
+    </column>
+    <column id="173" parent="42" name="NOTDATE">
+      <Position>5</Position>
+      <DataType>DATE|0</DataType>
+      <DefaultExpression>SYSDATE
+</DefaultExpression>
+    </column>
+    <index id="174" parent="42" name="SYS_C004307">
+      <ObjectId>15531</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2016-11-10.20:20:13</CreatedTimestamp>
+      <ModifiedTimestamp>2016-11-10.20:20:13</ModifiedTimestamp>
+      <TablespaceName>SYSTEM</TablespaceName>
+      <ColNames>IDX</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="175" parent="42" name="SYS_C004307">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2016-11-10.20:20:13</ModifiedTimestamp>
+      <ColNames>IDX</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>SYS_C004307</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="176" parent="42" name="NOTICE_FK">
+      <ModifiedTimestamp>2016-11-10.20:20:53</ModifiedTimestamp>
+      <ColNames>USERID</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <RefTableName>MEMBER</RefTableName>
+      <RefKeyName>SYS_C004337</RefKeyName>
+    </foreign-key>
+    <column id="177" parent="43" name="PROIDX">
+      <Position>1</Position>
+      <DataType>NUMBER(5)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="178" parent="43" name="USERID">
+      <Position>2</Position>
+      <DataType>VARCHAR2(80)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="179" parent="43" name="LECID">
+      <Position>3</Position>
+      <DataType>NUMBER(5)|0</DataType>
+    </column>
+    <column id="180" parent="43" name="CURRID">
+      <Position>4</Position>
+      <DataType>NUMBER(5)|0</DataType>
+    </column>
+    <column id="181" parent="43" name="PRODATE">
+      <Position>5</Position>
+      <DataType>DATE|0</DataType>
+      <DefaultExpression>SYSDATE
+</DefaultExpression>
+    </column>
+    <index id="182" parent="43" name="SYS_C004331">
+      <ObjectId>15549</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2016-11-10.20:20:37</CreatedTimestamp>
+      <ModifiedTimestamp>2016-11-10.20:20:37</ModifiedTimestamp>
+      <TablespaceName>SYSTEM</TablespaceName>
+      <ColNames>PROIDX</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="183" parent="43" name="SYS_C004331">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2016-11-10.20:20:37</ModifiedTimestamp>
+      <ColNames>PROIDX</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>SYS_C004331</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="184" parent="43" name="PRO_USERID_FK">
+      <ModifiedTimestamp>2016-11-10.20:21:27</ModifiedTimestamp>
+      <ColNames>USERID</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <RefTableName>MEMBER</RefTableName>
+      <RefKeyName>SYS_C004337</RefKeyName>
+    </foreign-key>
+    <foreign-key id="185" parent="43" name="PRO_LECID_FK">
+      <ModifiedTimestamp>2016-11-10.20:21:28</ModifiedTimestamp>
+      <ColNames>LECID</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <RefTableName>LECTURE</RefTableName>
+      <RefKeyName>SYS_C004311</RefKeyName>
+    </foreign-key>
+    <foreign-key id="186" parent="43" name="PRO_CURRID_FK">
+      <ModifiedTimestamp>2016-11-10.20:21:29</ModifiedTimestamp>
+      <ColNames>CURRID</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <RefTableName>CURRICULUM</RefTableName>
+      <RefKeyName>SYS_C004299</RefKeyName>
+    </foreign-key>
+    <column id="187" parent="44" name="GRADE">
+      <Position>1</Position>
+      <DataType>NUMBER(*)|0</DataType>
+    </column>
+    <column id="188" parent="44" name="LOSAL">
+      <Position>2</Position>
+      <DataType>NUMBER(*)|0</DataType>
+    </column>
+    <column id="189" parent="44" name="HISAL">
+      <Position>3</Position>
+      <DataType>NUMBER(*)|0</DataType>
+    </column>
+    <column id="190" parent="45" name="IDX">
+      <Position>1</Position>
+      <DataType>NUMBER(5)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="191" parent="45" name="USERID">
+      <Position>2</Position>
+      <DataType>VARCHAR2(80)|0</DataType>
+    </column>
+    <column id="192" parent="45" name="ATTIDX">
+      <Position>3</Position>
+      <DataType>NUMBER(5)|0</DataType>
+    </column>
+    <column id="193" parent="45" name="ATTDATE">
+      <Position>4</Position>
+      <DataType>DATE|0</DataType>
+    </column>
+    <column id="194" parent="45" name="ATTYN">
+      <Position>5</Position>
+      <DataType>VARCHAR2(5)|0</DataType>
+      <DefaultExpression>&apos;N&apos;</DefaultExpression>
+    </column>
+    <column id="195" parent="45" name="REGID">
+      <Position>6</Position>
+      <DataType>VARCHAR2(80)|0</DataType>
+    </column>
+    <column id="196" parent="45" name="REGDATE">
+      <Position>7</Position>
+      <DataType>DATE|0</DataType>
+      <DefaultExpression>SYSDATE
+</DefaultExpression>
+    </column>
+    <index id="197" parent="45" name="SYS_C004315">
+      <ObjectId>15537</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2016-11-10.20:20:22</CreatedTimestamp>
+      <ModifiedTimestamp>2016-11-10.20:20:22</ModifiedTimestamp>
+      <TablespaceName>SYSTEM</TablespaceName>
+      <ColNames>IDX</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="198" parent="45" name="SYS_C004315">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2016-11-10.20:20:22</ModifiedTimestamp>
+      <ColNames>IDX</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>SYS_C004315</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="199" parent="45" name="STSATT_USERID_FK">
+      <ModifiedTimestamp>2016-11-10.20:21:03</ModifiedTimestamp>
+      <ColNames>USERID</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <RefTableName>MEMBER</RefTableName>
+      <RefKeyName>SYS_C004337</RefKeyName>
+    </foreign-key>
+    <foreign-key id="200" parent="45" name="STSATT_ATTIDX_FK">
+      <ModifiedTimestamp>2016-11-10.20:21:06</ModifiedTimestamp>
+      <ColNames>ATTIDX</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <RefTableName>ATT</RefTableName>
+      <RefKeyName>SYS_C004328</RefKeyName>
+    </foreign-key>
+    <column id="201" parent="46" name="IDX">
+      <Position>1</Position>
+      <DataType>NUMBER(5)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="202" parent="46" name="USERID">
+      <Position>2</Position>
+      <DataType>VARCHAR2(80)|0</DataType>
+    </column>
+    <column id="203" parent="46" name="CURRID">
+      <Position>3</Position>
+      <DataType>NUMBER(5)|0</DataType>
+    </column>
+    <column id="204" parent="46" name="GRAIDX">
+      <Position>4</Position>
+      <DataType>NUMBER(5)|0</DataType>
+    </column>
+    <column id="205" parent="46" name="STUID">
+      <Position>5</Position>
+      <DataType>VARCHAR2(80)|0</DataType>
+    </column>
+    <column id="206" parent="46" name="CURRTITLE">
+      <Position>6</Position>
+      <DataType>VARCHAR2(200)|0</DataType>
+    </column>
+    <column id="207" parent="46" name="SCORE">
+      <Position>7</Position>
+      <DataType>NUMBER(10)|0</DataType>
+    </column>
+    <column id="208" parent="46" name="RANK">
+      <Position>8</Position>
+      <DataType>NUMBER(8)|0</DataType>
+    </column>
+    <column id="209" parent="46" name="REGID">
+      <Position>9</Position>
+      <DataType>VARCHAR2(80)|0</DataType>
+    </column>
+    <column id="210" parent="46" name="REGDATE">
+      <Position>10</Position>
+      <DataType>DATE|0</DataType>
+      <DefaultExpression>SYSDATE
+</DefaultExpression>
+    </column>
+    <index id="211" parent="46" name="SYS_C004313">
+      <ObjectId>15535</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2016-11-10.20:20:19</CreatedTimestamp>
+      <ModifiedTimestamp>2016-11-10.20:20:19</ModifiedTimestamp>
+      <TablespaceName>SYSTEM</TablespaceName>
+      <ColNames>IDX</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="212" parent="46" name="SYS_C004313">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2016-11-10.20:20:19</ModifiedTimestamp>
+      <ColNames>IDX</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>SYS_C004313</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="213" parent="46" name="STSGRA_USERID_FK">
+      <ModifiedTimestamp>2016-11-10.20:21:01</ModifiedTimestamp>
+      <ColNames>USERID</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <RefTableName>MEMBER</RefTableName>
+      <RefKeyName>SYS_C004337</RefKeyName>
+    </foreign-key>
+    <column id="214" parent="47" name="IDX">
+      <Position>1</Position>
+      <DataType>NUMBER(5)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="215" parent="47" name="USERID">
+      <Position>2</Position>
+      <DataType>VARCHAR2(80)|0</DataType>
+    </column>
+    <column id="216" parent="47" name="LECID">
+      <Position>3</Position>
+      <DataType>NUMBER(5)|0</DataType>
+    </column>
+    <column id="217" parent="47" name="CURRID">
+      <Position>4</Position>
+      <DataType>NUMBER(5)|0</DataType>
+    </column>
+    <column id="218" parent="47" name="PROIDX">
+      <Position>5</Position>
+      <DataType>NUMBER(5)|0</DataType>
+    </column>
+    <column id="219" parent="47" name="CURRTITLE">
+      <Position>6</Position>
+      <DataType>VARCHAR2(200)|0</DataType>
+    </column>
+    <column id="220" parent="47" name="TOTALREAD">
+      <Position>7</Position>
+      <DataType>NUMBER(10)|0</DataType>
+    </column>
+    <column id="221" parent="47" name="LECCOUNT">
+      <Position>8</Position>
+      <DataType>NUMBER(10)|0</DataType>
+    </column>
+    <column id="222" parent="47" name="REGID">
+      <Position>9</Position>
+      <DataType>VARCHAR2(80)|0</DataType>
+    </column>
+    <column id="223" parent="47" name="REGDATE">
+      <Position>10</Position>
+      <DataType>DATE|0</DataType>
+      <DefaultExpression>SYSDATE
+</DefaultExpression>
+    </column>
+    <index id="224" parent="47" name="SYS_C004319">
+      <ObjectId>15541</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2016-11-10.20:20:26</CreatedTimestamp>
+      <ModifiedTimestamp>2016-11-10.20:20:26</ModifiedTimestamp>
+      <TablespaceName>SYSTEM</TablespaceName>
+      <ColNames>IDX</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="225" parent="47" name="SYS_C004319">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2016-11-10.20:20:26</ModifiedTimestamp>
+      <ColNames>IDX</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>SYS_C004319</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="226" parent="47" name="STSPRO_USERID_FK">
+      <ModifiedTimestamp>2016-11-10.20:21:11</ModifiedTimestamp>
+      <ColNames>USERID</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <RefTableName>MEMBER</RefTableName>
+      <RefKeyName>SYS_C004337</RefKeyName>
+    </foreign-key>
+    <foreign-key id="227" parent="47" name="STSPRO_LECID_FK">
+      <ModifiedTimestamp>2016-11-10.20:21:12</ModifiedTimestamp>
+      <ColNames>LECID</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <RefTableName>LECTURE</RefTableName>
+      <RefKeyName>SYS_C004311</RefKeyName>
+    </foreign-key>
+    <foreign-key id="228" parent="47" name="STSPRO_CURRID_FK">
+      <ModifiedTimestamp>2016-11-10.20:21:15</ModifiedTimestamp>
+      <ColNames>CURRID</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <RefTableName>CURRICULUM</RefTableName>
+      <RefKeyName>SYS_C004299</RefKeyName>
+    </foreign-key>
+    <foreign-key id="229" parent="47" name="STSPRO_PROIDX_FK">
+      <ModifiedTimestamp>2016-11-10.20:21:16</ModifiedTimestamp>
+      <ColNames>PROIDX</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <RefTableName>PRO</RefTableName>
+      <RefKeyName>SYS_C004331</RefKeyName>
+    </foreign-key>
+    <column id="230" parent="48" name="IDX">
+      <Position>1</Position>
+      <DataType>NUMBER(5)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="231" parent="48" name="ATTTOTAL">
+      <Position>2</Position>
+      <DataType>NUMBER(10)|0</DataType>
+    </column>
+    <column id="232" parent="48" name="ATTLASTREG">
+      <Position>3</Position>
+      <DataType>DATE|0</DataType>
+    </column>
+    <column id="233" parent="48" name="ATTLASTUPDATER">
+      <Position>4</Position>
+      <DataType>VARCHAR2(80)|0</DataType>
+    </column>
+    <column id="234" parent="48" name="PROTOTAL">
+      <Position>5</Position>
+      <DataType>NUMBER(10)|0</DataType>
+    </column>
+    <column id="235" parent="48" name="PROLASTREG">
+      <Position>6</Position>
+      <DataType>DATE|0</DataType>
+    </column>
+    <column id="236" parent="48" name="PROLASTUPDATER">
+      <Position>7</Position>
+      <DataType>VARCHAR2(80)|0</DataType>
+    </column>
+    <column id="237" parent="48" name="GRATOTAL">
+      <Position>8</Position>
+      <DataType>NUMBER(10)|0</DataType>
+    </column>
+    <column id="238" parent="48" name="GRALASTREG">
+      <Position>9</Position>
+      <DataType>DATE|0</DataType>
+    </column>
+    <column id="239" parent="48" name="GRALASTUPDATER">
+      <Position>10</Position>
+      <DataType>VARCHAR2(80)|0</DataType>
+    </column>
+    <column id="240" parent="48" name="REGID">
+      <Position>11</Position>
+      <DataType>VARCHAR2(80)|0</DataType>
+    </column>
+    <column id="241" parent="48" name="REGDATE">
+      <Position>12</Position>
+      <DataType>DATE|0</DataType>
+      <DefaultExpression>SYSDATE
+</DefaultExpression>
+    </column>
+    <index id="242" parent="48" name="SYS_C004317">
+      <ObjectId>15539</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2016-11-10.20:20:24</CreatedTimestamp>
+      <ModifiedTimestamp>2016-11-10.20:20:24</ModifiedTimestamp>
+      <TablespaceName>SYSTEM</TablespaceName>
+      <ColNames>IDX</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="243" parent="48" name="SYS_C004317">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2016-11-10.20:20:24</ModifiedTimestamp>
+      <ColNames>IDX</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>SYS_C004317</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>
