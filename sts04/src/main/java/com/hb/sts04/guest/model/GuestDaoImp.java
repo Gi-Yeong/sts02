@@ -18,7 +18,7 @@ public class GuestDaoImp implements GuestDao {
 
     @Override
     public GuestVo selectOne(int sabun) {
-        return null;
+        return sqlSession.selectOne("guest.selectOne", sabun);
     }
 
     @Override

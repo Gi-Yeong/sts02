@@ -1,9 +1,7 @@
 package com.hb.sts04.guest.controller;
 
 import com.hb.sts04.guest.model.GuestDao;
-import com.sun.javafx.sg.PGShape;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpMethod;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -22,14 +20,14 @@ public class GuestController {
     }
 
     @RequestMapping(value = "/guest/{sabun}", method = RequestMethod.GET)
-    public String guestOne(@PathVariable("sabun") int sabun, Model model) {
+    public String guestOne(Model model, @PathVariable("sabun") int sabun) {
         model.addAttribute("bean", guestDao.selectOne(sabun));
         return "guest/detail";
     }
 
     @RequestMapping(value = "/guest/{sabun}", method = RequestMethod.PUT)
-    public String guestUpdate(){
+    public String guestUpdate() {
         System.out.println("PUT");
-        return "guest/detail";
+        return null;
     }
 }
