@@ -1,18 +1,28 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>LIST</title>
+    <title>DETAIL</title>
     <!-- 부트스트랩 -->
     <link href="${pageContext.request.contextPath}/css/bootstrap.min.css" rel="stylesheet">
     <style></style>
     <!-- jQuery (자바스크립트 플러그인을 위해 필요합니다) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="${pageContext.request.contextPath}/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".edit").hide();
+            $(".detail").show();
+            $(".btnEdit").click(function () {
+                $(".detail").hide();
+                $(".edit").show();
+                $(".page-hader").html("<h1>수정 페이지</h1>");
+            });
+        });
+    </script>
     <style type="text/css">
         body {
             padding-top: 50px;
@@ -48,42 +58,25 @@
     <p>guest table list</p>
     <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
 </div>
-<div class="container">
-    <div class="row">
-        <div class="col-xs-12">
-            <table class="table table-hover">
-                <tr>
-                    <th>사번</th>
-                    <th>이름</th>
-                    <th>날짜</th>
-                    <th>금액</th>
-                </tr>
-                <c:forEach items="${alist}" var="bean">
-                    <tr>
-                        <td>
-                            <a href="/guest/${bean.sabun}">
-                                    ${bean.sabun}
-                            </a>
-                        </td>
-                        <td>
-                            <a href="/guest/${bean.sabun}">
-                                    ${bean.name}
-                            </a>
-                        </td>
-                        <td>
-                            <a href="/guest/${bean.sabun}">
-                                    ${bean.nalja}
-                            </a>
-                        </td>
-                        <td>
-                            <a href="/guest/${bean.sabun}">
-                                    ${bean.pay}
-                            </a>
-                        </td>
-                    </tr>
-                </c:forEach>
-            </table>
-        </div>
+
+<div class="row">
+    <div class="col-xs-12">
+        <form method="post" class="form-horizontal">
+            <input type="hidden" name="_method" value="put">
+            <div class="form-group">
+                <label for="sabun">사번</label>
+                <input type="text" class="form-control" id="sabun" name="sabun" value="${bean.sabun}">
+            </div>
+            <div class="form-group">
+                <label for="name">이름</label>
+                <input type="text" class="form-control" id="name" name="name" value="${bean.name}">
+            </div>
+            <div class="form-group">
+                <label for="pay">금액</label>
+                <input type="text" class="form-control" id="pay" name="pay" value="${bean.pay}">
+            </div>
+            <button type="submit" class="btn btn-default">수정</button>
+        </form>
     </div>
 </div>
 </body>
