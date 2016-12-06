@@ -21,4 +21,7 @@
         DELETE FROM GUEST
         WHERE SABUN = #{value}
     </delete>
+    <insert id="insertOne" parameterType="com.hb.sts04.guest.model.GuestVo">
+        INSERT INTO GUEST VALUES (#{sabun}, #{name}, sysdate, #{pay})
+    </insert>
 </mapper>

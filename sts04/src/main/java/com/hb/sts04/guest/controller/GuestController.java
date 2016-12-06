@@ -14,7 +14,7 @@ public class GuestController {
     @Autowired
     private GuestDao guestDao;
 
-    @RequestMapping("/guest")
+    @RequestMapping(value = "/guest", method = RequestMethod.GET)
     public String guestList(Model model) {
         model.addAttribute("alist", guestDao.selectAll());
         return "guest/list";
@@ -36,5 +36,17 @@ public class GuestController {
     public String guestDelete(@PathVariable("sabun") int sabun) {
         guestDao.deleteOne(sabun);
         return "redirect:/guest/";
+    }
+
+    @RequestMapping(value = "/guest/form")
+    public void form() {
+        // 리턴이 void일 경우 /guest/form(메소드명)이라는 문자열이 전달 됨
+        // 리턴이 String 이어도 return 이 null 이면 void와 동작이 같다
+    }
+
+    @RequestMapping(value = "/guest", method = RequestMethod.POST)
+    public String  GuestInsert(GuestVo bean) {
+        guestDao.insertOne(bean);
+        return "redirect:/guest";
     }
 }
