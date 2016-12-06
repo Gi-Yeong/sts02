@@ -13,7 +13,7 @@
     <bytecodeTargetLevel>
       <module name="ex02" target="1.5" />
       <module name="sts03" target="1.6" />
-      <module name="sts04" target="1.5" />
+      <module name="sts04" target="1.7" />
     </bytecodeTargetLevel>
   </component>
 </project>

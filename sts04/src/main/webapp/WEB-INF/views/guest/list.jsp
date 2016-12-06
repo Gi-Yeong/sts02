@@ -1,11 +1,12 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Title</title>
+    <title>LIST</title>
     <!-- 부트스트랩 -->
     <link href="${pageContext.request.contextPath}/css/bootstrap.min.css" rel="stylesheet">
     <style></style>
@@ -38,8 +39,8 @@
         </div>
         <div id="navbar" class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="${pageContext.request.contextPath}/">Home</a></li>
-                <li><a href="${pageContext.request.contextPath}/guest">리스트</a></li>
+                <li><a href="${pageContext.request.contextPath}/">Home</a></li>
+                <li class="active"><a href="${pageContext.request.contextPath}/guest">리스트</a></li>
                 <li><a href="${pageContext.request.contextPath}/guest/form">입력</a></li>
                 <li><a href="${pageContext.request.contextPath}/login/form">로그인</a></li>
             </ul>
@@ -48,17 +49,31 @@
 </nav>
 
 <div class="jumbotron">
-    <h1>Hello, world!</h1>
-    <p>aaaaaa</p>
+    <h1>LIST PAGE</h1>
+    <p>guest table list</p>
     <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
 </div>
 <div class="container">
-
-    <div class="starter-template">
-        <h1>환영합니다</h1>
-        <p class="lead">상단의 메뉴를 선택하세요</p>
+    <div class="row">
+        <div class="col-xs-12">
+            <table class="table table-hover">
+                <tr>
+                    <th>사번</th>
+                    <th>이름</th>
+                    <th>날짜</th>
+                    <th>금액</th>
+                </tr>
+                <c:forEach items="${alist}" var="bean">
+                    <tr>
+                        <td>${bean.sabun}</td>
+                        <td>${bean.name}</td>
+                        <td>${bean.nalja}</td>
+                        <td>${bean.pay}</td>
+                    </tr>
+                </c:forEach>
+            </table>
+        </div>
     </div>
-
-</div><!-- /.container -->
+</div>
 </body>
 </html>

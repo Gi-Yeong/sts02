@@ -12,15 +12,10 @@
       </configuration>
     </facet>
     <facet type="Spring" name="Spring">
-      <configuration>
-        <fileset id="fileset" name="Spring Application Context" removed="false">
-          <file>file://$MODULE_DIR$/src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml</file>
-          <file>file://$MODULE_DIR$/src/main/webapp/WEB-INF/spring/root-context.xml</file>
-        </fileset>
-      </configuration>
+      <configuration />
     </facet>
   </component>
-  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_5" inherit-compiler-output="false">
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_7" inherit-compiler-output="false">
     <output url="file://$MODULE_DIR$/target/classes" />
     <output-test url="file://$MODULE_DIR$/target/test-classes" />
     <content url="file://$MODULE_DIR$">
@@ -41,11 +36,14 @@
     <orderEntry type="library" name="Maven: org.springframework:spring-context-support:3.1.1.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-web:3.1.1.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.aspectj:aspectjrt:1.6.10" level="project" />
+    <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.6.6" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Maven: org.slf4j:jcl-over-slf4j:1.6.6" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Maven: org.slf4j:slf4j-log4j12:1.6.6" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Maven: log4j:log4j:1.2.15" level="project" />
+    <orderEntry type="library" name="Maven: javax.inject:javax.inject:1" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: javax.servlet:servlet-api:2.5" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: javax.servlet.jsp:jsp-api:2.1" level="project" />
     <orderEntry type="library" name="Maven: javax.servlet:jstl:1.2" level="project" />
-    <orderEntry type="library" name="Maven: javax.inject:javax.inject:1" level="project" />
-    <orderEntry type="library" name="Maven: log4j:log4j:1.2.17" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: junit:junit:4.7" level="project" />
     <orderEntry type="library" name="Maven: commons-dbcp:commons-dbcp:1.4" level="project" />
     <orderEntry type="library" name="Maven: commons-pool:commons-pool:1.5.4" level="project" />
