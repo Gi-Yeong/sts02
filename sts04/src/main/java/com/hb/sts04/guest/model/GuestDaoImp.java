@@ -28,11 +28,11 @@ public class GuestDaoImp implements GuestDao {
 
     @Override
     public void updateOne(GuestVo bean) {
-
+        sqlSession.update("guest.updateOne", bean);
     }
 
     @Override
     public void deleteOne(int sabun) {
-
+        sqlSession.delete("guest.deleteOne", sabun);
     }
 }

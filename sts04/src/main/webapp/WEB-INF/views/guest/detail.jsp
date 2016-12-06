@@ -26,6 +26,18 @@
                 $(".edit").show();
                 $(".page-header").html("<h1>수정 페이지</h1>");
             });
+            $(".btnDel").click(function () {
+                $.ajax(
+                    "/guest/${bean.sabun}", {
+                        async  : false,
+                        type   : "DELETE",
+                        success: function () {
+                            window.location.replace("/guest");
+                        }
+                    }
+                );
+                return false;
+            });
         });
 
     </script>
@@ -100,7 +112,7 @@
                 <tr>
                     <td colspan="2">
                         <button type="button" class="btn btn-primary btnEdit">수정</button>
-                        <a class="btn btn-danger" href="#" role="button">삭제</a>
+                        <a class="btn btn-danger btnDel" href="#" role="button">삭제</a>
                     </td>
                 </tr>
             </table>

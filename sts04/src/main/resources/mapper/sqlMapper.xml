@@ -12,4 +12,13 @@
         FROM GUEST
         WHERE sabun = #{value}
     </select>
+    <update id="updateOne" parameterType="com.hb.sts04.guest.model.GuestVo">
+        UPDATE GUEST
+        SET NAME = #{name}, PAY = #{pay}
+        WHERE SABUN = #{sabun}
+    </update>
+    <delete id="deleteOne" parameterType="int">
+        DELETE FROM GUEST
+        WHERE SABUN = #{value}
+    </delete>
 </mapper>

@@ -1,6 +1,7 @@
 package com.hb.sts04.guest.controller;
 
 import com.hb.sts04.guest.model.GuestDao;
+import com.hb.sts04.guest.model.GuestVo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -26,8 +27,14 @@ public class GuestController {
     }
 
     @RequestMapping(value = "/guest/{sabun}", method = RequestMethod.PUT)
-    public String guestUpdate() {
-        System.out.println("PUT");
-        return null;
+    public String guestUpdate(@PathVariable("sabun") int sabun, GuestVo bean) {
+        guestDao.updateOne(bean);
+        return "redirect:/guest/" + sabun;
+    }
+
+    @RequestMapping(value = "/guest/{sabun}", method = RequestMethod.DELETE)
+    public String guestDelete(@PathVariable("sabun") int sabun) {
+        guestDao.deleteOne(sabun);
+        return "redirect:/guest/";
     }
 }
