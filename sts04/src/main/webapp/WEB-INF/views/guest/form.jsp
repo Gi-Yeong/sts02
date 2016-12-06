@@ -65,28 +65,32 @@
             <form class="form-horizontal" action="${pageContext.request.contextPath}/guest" method="post">
                 <div class="form-group">
                     <label for="sabun" class="col-sm-2 control-label">사번</label>
-                    <div class="col-sm-10">
+                    <div class="col-sm-10 input-group input-group-sm">
+                        <span class="input-group-addon" id="sizing-addon3">번호</span>
                         <input type="number" class="form-control" name="sabun" id="sabun" placeholder="사번을 입력하세요">
                     </div>
                 </div>
                 <div class="form-group">
                     <label for="name" class="col-sm-2 control-label">이름</label>
-                    <div class="col-sm-10">
+                    <div class="col-sm-10 input-group input-group-sm">
+                        <span class="input-group-addon">문자</span>
                         <input type="text" class="form-control" name="name" id="name" placeholder="이름을 입력하세요">
                     </div>
                 </div>
                 <div class="form-group">
                     <label for="pay" class="col-sm-2 control-label">금액</label>
-                    <div class="col-sm-10">
+                    <div class="col-sm-10 input-group input-group-sm">
+                        <span class="input-group-addon">원</span>
                         <input type="number" class="form-control" name="pay" id="pay" placeholder="금액을 입력하세요">
                     </div>
                 </div>
                 <div class="form-group">
                     <div class="col-sm-offset-2 col-sm-10">
-                        <button type="submit" class="btn btn-default">입 력</button>
-                        <button type="reset" class="btn btn-default">취 소</button>
+                        <div class="btn-group" role="group">
+                            <button type="submit" class="btn btn-default">입 력</button>
+                            <button type="reset" class="btn btn-default">취 소</button>
+                        </div>
                     </div>
-                </div>
             </form>
         </div>
     </div>
