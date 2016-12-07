@@ -16,6 +16,6 @@
         <!--</environment>-->
     <!--</environments>-->
     <mappers>
-        <mapper resource="sql/sqlMapper.xml"/>
+        <mapper resource="sql/guestMapper.xml"/>
     </mappers>
 </configuration>

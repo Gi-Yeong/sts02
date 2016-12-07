@@ -2,6 +2,7 @@
 <project version="4">
   <component name="SqlDialectMappings">
     <file url="file://$PROJECT_DIR$/sts03" dialect="Oracle" />
-    <file url="file://$PROJECT_DIR$/sts04/src/main/resources/mapper/sqlMapper.xml" dialect="Oracle" />
+    <file url="file://$PROJECT_DIR$/sts04/src/main/resources/sql/sqlMapper.xml" dialect="Oracle" />
+    <file url="file://$PROJECT_DIR$/sts05/src/main/resources/sql/guestMapper.xml" dialect="Oracle" />
   </component>
 </project>

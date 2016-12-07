@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- Root Context: defines shared resources visible to all other web components -->
+    <!-- app.properties-->
+    <bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+        <property name="location" value="/WEB-INF/spring/app.properties"/>
+    </bean>
+
+    <!-- 데이터 소스 -> sql세션 펙토리 빈(데이터 소스, xml) -> sql세션템플릿(sql 펙토리 빈)-->
+    <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource">
+        <property name="driverClassName" value="${driverClassName.driver}"/>
+        <property name="url" value="${url.url}"/>
+        <property name="username" value="${username.id}"/>
+        <property name="password" value="${password.pw}"/>
+    </bean>
+
+    <bean id="sqlSessionFactoryBean" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <property name="dataSource" ref="dataSource"/>
+        <property name="configLocation" value="classpath:/mybatis-config.xml" />
+        <!--<property name="configLocation" value="${configLocation.config}" />-->
+    </bean>
+    <bean id="sqlSession" class="org.mybatis.spring.SqlSessionTemplate">
+        <constructor-arg ref="sqlSessionFactoryBean"/>
+    </bean>
+
+    <!--<bean id="sqlSessionFactoryBean" class="org.mybatis.spring.SqlSessionFactoryBean">-->
+        <!--<property name="dataSource" ref="dataSource"/>-->
+        <!--<property name="configLocation" value="classpath:/mybatis-config.xml"/>-->
+    <!--</bean>-->
+
+    <!--&lt;!&ndash;생성자는 sqlSesstionFactoryBean을 인자로 갖는다&ndash;&gt;-->
+    <!--<bean id="sqlSession" class="org.mybatis.spring.SqlSessionTemplate">-->
+        <!--<constructor-arg name="sqlSessionFactory" ref="sqlSessionFactoryBean"/>-->
+    <!--</bean>-->
+
+</beans>
