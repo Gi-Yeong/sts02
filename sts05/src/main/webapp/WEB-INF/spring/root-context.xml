@@ -19,21 +19,11 @@
 
     <bean id="sqlSessionFactoryBean" class="org.mybatis.spring.SqlSessionFactoryBean">
         <property name="dataSource" ref="dataSource"/>
-        <property name="configLocation" value="classpath:/mybatis-config.xml" />
-        <!--<property name="configLocation" value="${configLocation.config}" />-->
+        <!--<property name="configLocation" value="classpath:/mybatis-config.xml" />-->
+        <property name="configLocation" value="${configLocation.config}" />
     </bean>
     <bean id="sqlSession" class="org.mybatis.spring.SqlSessionTemplate">
         <constructor-arg ref="sqlSessionFactoryBean"/>
     </bean>
-
-    <!--<bean id="sqlSessionFactoryBean" class="org.mybatis.spring.SqlSessionFactoryBean">-->
-        <!--<property name="dataSource" ref="dataSource"/>-->
-        <!--<property name="configLocation" value="classpath:/mybatis-config.xml"/>-->
-    <!--</bean>-->
-
-    <!--&lt;!&ndash;생성자는 sqlSesstionFactoryBean을 인자로 갖는다&ndash;&gt;-->
-    <!--<bean id="sqlSession" class="org.mybatis.spring.SqlSessionTemplate">-->
-        <!--<constructor-arg name="sqlSessionFactory" ref="sqlSessionFactoryBean"/>-->
-    <!--</bean>-->
 
 </beans>
