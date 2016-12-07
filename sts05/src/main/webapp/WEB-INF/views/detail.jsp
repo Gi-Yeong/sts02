@@ -6,18 +6,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>DETAIL</title>
-    <style></style>
     <!-- jQuery (자바스크립트 플러그인을 위해 필요합니다) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script type="text/javascript">
         $(document).ready(function () {
             $("button").click(function () {
-                if ($(this).attr("type") == "button") {
-                    $(".nalja").remove();
-                    $("h1").text("수정페이지");
-                    $("input").removeAttr("readonly");
-                    $(this).attr("type", "submit");
-                    return false;
+                if ($(this).text() == "수정") {
+                    if ($(this).attr("type") == "button") {
+                        $(".nalja").remove();
+                        $("h1").text("수정페이지");
+                        $("input").removeAttr("readonly");
+                        $(this).attr("type", "submit");
+                        return false;
+                    }
+                } else {
+                    $.post(
+                        "/guest/delete",
+                        {'idx': '${bean.sabun}'},
+                        function () {
+                            window.location.replace("/guest/");
+                        }
+                    )
                 }
             });
         });
@@ -44,6 +53,7 @@
     </p>
     <p>
         <button type="button">수정</button>
+        <button type="button">삭제</button>
     </p>
 </form>
 </body>

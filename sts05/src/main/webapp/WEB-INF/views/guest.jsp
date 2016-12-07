@@ -17,6 +17,10 @@
             width: 24%;
             display: inline-block;
         }
+
+        .col_link {
+            text-decoration: none;
+        }
     </style>
     <!-- jQuery (자바스크립트 플러그인을 위해 필요합니다) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
@@ -31,7 +35,7 @@
         <span class="col">금액</span>
     </div>
     <c:forEach items="${alist}" var="bean">
-        <a href="${pageContext.request.contextPath}/guest/detail?idx=${bean.sabun}">
+        <a class="col_link" href="${pageContext.request.contextPath}/guest/detail?idx=${bean.sabun}">
             <div>
                 <span class="col">${bean.sabun}</span>
                 <span class="col">${bean.name}</span>
@@ -41,5 +45,8 @@
         </a>
     </c:forEach>
 </div>
+<p>
+    <a href="${pageContext.request.contextPath}/guest/add">입력</a>
+</p>
 </body>
 </html>

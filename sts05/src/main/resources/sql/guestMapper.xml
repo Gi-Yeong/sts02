@@ -16,11 +16,11 @@
         SET NAME = #{name}, PAY = #{pay}
         WHERE SABUN = #{sabun}
     </update>
-    <!--<insert id="insertOne" parameterType="com.hb.sts05.model.GuestVo">-->
-        <!--INSERT INTO GUEST VALUES (#{}, #{}, sysdate, #{})-->
-    <!--</insert>-->
-    <!--<delete id="deleteOne" parameterType="int">-->
-        <!--DELETE FROM GUEST-->
-        <!--WHERE SABUN = #{}-->
-    <!--</delete>-->
+    <insert id="insertOne" parameterType="com.hb.sts05.model.GuestVo">
+        INSERT INTO GUEST VALUES (#{sabun}, #{name}, sysdate, #{pay})
+    </insert>
+    <delete id="deleteOne" parameterType="int">
+        DELETE FROM GUEST
+        WHERE SABUN = #{value}
+    </delete>
 </mapper>

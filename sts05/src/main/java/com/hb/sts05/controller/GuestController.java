@@ -13,11 +13,12 @@ import org.springframework.web.bind.annotation.RequestParam;
 import java.util.List;
 
 @Controller
+@RequestMapping("/guest")
 public class GuestController {
     @Autowired
     private SqlSession sqlSession;
 
-    @RequestMapping("/guest")
+    @RequestMapping("/")
     public String guestList(Model model) {
         GuestDao mapper = sqlSession.getMapper(GuestDao.class);
         List list = mapper.selectAll();
@@ -25,7 +26,7 @@ public class GuestController {
         return "guest";
     }
 
-    @RequestMapping("/guest/detail")
+    @RequestMapping("/detail")
     public String guestDetail(Model model, @RequestParam("idx") int sabun) {
         GuestDao mapper = sqlSession.getMapper(GuestDao.class);
         GuestVo bean = mapper.selectOne(sabun);
@@ -34,12 +35,31 @@ public class GuestController {
         return "detail";
     }
 
-    @RequestMapping(value = "/guest/update", method = RequestMethod.POST)
-    public String guestUpdate(GuestVo bean){
+    @RequestMapping(value = "/update", method = RequestMethod.POST)
+    public String guestUpdate(GuestVo bean) {
         GuestDao mapper = sqlSession.getMapper(GuestDao.class);
         mapper.updateOne(bean);
 
-        return "redirect:/guest";
+        return "redirect:/guest/";
+    }
+
+    @RequestMapping("/add")
+    public String addView() {
+        return "insert";
+    }
+
+    @RequestMapping(value = "/insert", method = RequestMethod.POST)
+    public String addView(GuestVo bean) {
+        GuestDao mapper = sqlSession.getMapper(GuestDao.class);
+        mapper.insertOne(bean);
+        return "redirect:/guest/";
+    }
+
+    @RequestMapping(value = "/delete", method = RequestMethod.POST)
+    public String guestDel(@RequestParam("idx") int sabun) {
+        GuestDao mapper = sqlSession.getMapper(GuestDao.class);
+        mapper.deleteOne(sabun);
+        return "redirect:/guest/";
     }
 
 }
