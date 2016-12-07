@@ -2,6 +2,7 @@ package com.hb.sts05.controller;
 
 import com.hb.sts05.model.GuestDao;
 import com.hb.sts05.model.GuestVo;
+import netscape.javascript.JSObject;
 import org.apache.ibatis.session.SqlSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -10,10 +11,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 
 @Controller
-@RequestMapping("/guest")
+@RequestMapping("/guest/")
 public class GuestController {
     @Autowired
     private SqlSession sqlSession;
@@ -62,4 +64,15 @@ public class GuestController {
         return "redirect:/guest/";
     }
 
+    @RequestMapping(value = "/login", method = RequestMethod.POST)
+    public String guestLogin(HttpServletRequest request) {
+        String id = request.getParameter("id");
+        String pw = request.getParameter("pw");
+        System.out.println(id + ":" + pw);
+        if (id.equals("abcd") && pw.equals("1234")) {
+            return "success";
+        } else {
+            return "fail";
+        }
+    }
 }

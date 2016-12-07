@@ -24,8 +24,46 @@
     </style>
     <!-- jQuery (자바스크립트 플러그인을 위해 필요합니다) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("button").click(function () {
+//                var json = {'id': $("#id").val(), 'pw': $("#pw").val()};
+                var id = $("#id").val();
+                var pw = $("#pw").val();
+                $.ajax({
+                        url    : '/guest/login',
+                        type   : 'post',
+//                        datatype: 'JSON',   // 응답 타입
+                        data   : {'id': JSON.stringify(id), 'pw': JSON.stringify(pw)},
+//                        data   : json,
+                        success: function (data) {
+                            alert(data);
+                            if (data == 'success') {
+                                $('.login').remove();
+                                $('.login_ok').html('<h1>로그인 성공</h1>');
+                            } else {
+                                $('.login').remove();
+                                $('.login_ok').html('<h1>로그인 실패</h1>');
+                            }
+                        }
+                    }
+                )
+            })
+        })
+    </script>
 </head>
 <body>
+<h1>LOGIN</h1>
+<div class="login_ok"></div>
+<div class="login">
+    <form action="${pageContext.request.contextPath}/guest/login" method="post">
+        <label for="id">id</label>
+        <input type="text" name="id" id="id"/>
+        <label for="pw">pw</label>
+        <input type="text" name="pw" id="pw"/>
+        <button type="button">LOGIN</button>
+    </form>
+</div>
 <h1>리스트페이지</h1>
 <div class="table">
     <div>
