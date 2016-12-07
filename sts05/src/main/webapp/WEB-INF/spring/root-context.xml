@@ -6,7 +6,7 @@
     <!-- Root Context: defines shared resources visible to all other web components -->
     <!-- app.properties-->
     <bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
-        <property name="location" value="/WEB-INF/spring/app.properties"/>
+        <property name="location" value="classpath:/app.properties"/>
     </bean>
 
     <!-- 데이터 소스 -> sql세션 펙토리 빈(데이터 소스, xml) -> sql세션템플릿(sql 펙토리 빈)-->
