@@ -15,7 +15,7 @@
 </head>
 <body>
 <h1>글쓰기</h1>
-<form action="">
+<form action="${pageContext.request.contextPath}/result" method="post" enctype="multipart/form-data">
     <p>
         <label for="id">id</label>
         <input type="text" name="id" id="id">
