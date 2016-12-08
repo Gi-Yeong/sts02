@@ -28,22 +28,37 @@
         $(document).ready(function () {
             $("button").click(function () {
 //                var json = {'id': $("#id").val(), 'pw': $("#pw").val()};
-                var id = $("#id").val();
-                var pw = $("#pw").val();
+//                var id = $("#id").val();
+//                var pw = $("#pw").val();
+//                var json = {'id': $("#id").val(), 'pw': $("#pw").val()};
+                var json = new Object();
+
+//                json.id = $("#id").val();
+//                json.pw = $("#pw").val();
+                json = $('#form1').serialize();
+                alert(json);
+
                 $.ajax({
-                        url    : '/guest/login',
-                        type   : 'post',
-//                        datatype: 'JSON',   // 응답 타입
-                        data   : {'id': JSON.stringify(id), 'pw': JSON.stringify(pw)},
+                        url: '/guest/login',
+                        type: 'post',
+//                        dataType: 'text',   // 응답 타입
+//                        data   : {'id': JSON.stringify(id), 'pw': JSON.stringify(pw)},
+                        data: json,
 //                        data   : json,
                         success: function (data) {
                             alert(data);
                             if (data == 'success') {
                                 $('.login').remove();
-                                $('.login_ok').html('<h1>로그인 성공</h1>');
-                            } else {
+//                                $('.login_ok').html('<h1>로그인 성공</h1>');
+                                $('.login_ok').load('/loginOk.html');
+
+                                window.localStorage.setItem("id", id);
+//                                키 가져오기
+//                                var value = window.localStorage.getItem("id");
+                            } else if (data == 'fail') {
                                 $('.login').remove();
                                 $('.login_ok').html('<h1>로그인 실패</h1>');
+                                window.localStorage.setItem("id", id);
                             }
                         }
                     }
@@ -56,7 +71,7 @@
 <h1>LOGIN</h1>
 <div class="login_ok"></div>
 <div class="login">
-    <form action="${pageContext.request.contextPath}/guest/login" method="post">
+    <form id="form1" action="${pageContext.request.contextPath}/guest/login" method="post">
         <label for="id">id</label>
         <input type="text" name="id" id="id"/>
         <label for="pw">pw</label>

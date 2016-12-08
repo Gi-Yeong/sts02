@@ -4,6 +4,8 @@ import com.hb.sts05.model.GuestDao;
 import com.hb.sts05.model.GuestVo;
 import org.apache.ibatis.session.SqlSession;
 import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
+import org.json.simple.parser.ParseException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -11,10 +13,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import javax.servlet.ServletInputStream;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.io.UnsupportedEncodingException;
 import java.util.List;
 
 @Controller
@@ -71,20 +76,16 @@ public class GuestController {
     public void guestLogin(HttpServletRequest request, HttpServletResponse response) {
         String id = request.getParameter("id");
         String pw = request.getParameter("pw");
-        System.out.println(id + ":" + pw);
-        System.out.println("line");
-        JSONObject json = new JSONObject();
 
-        String id1 = (String) json.get("tt");
-        String pw1 = (String) json.get(request.getParameter("pw"));
-        System.out.println(id1 + ":" + pw1);
+        System.out.println("id:" + id + ":" + "pw:" + pw);
+
         PrintWriter out = null;
         try {
             out = response.getWriter();
         } catch (IOException e) {
             e.printStackTrace();
         }
-        if (id1.equals("abcd") && pw1.equals("1234")) {
+        if (id.equals("abcd") && pw.equals("1234")) {
             if (out != null) {
                 out.print("success");
             }
