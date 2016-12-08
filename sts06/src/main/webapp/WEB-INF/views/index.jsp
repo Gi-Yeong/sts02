@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>UPFORM</title>
+    <title>HOME</title>
     <!-- 부트스트랩 -->
     <link href="" rel="stylesheet">
     <style></style>
@@ -14,23 +14,7 @@
     <script src=""></script>
 </head>
 <body>
-<h1>글쓰기</h1>
-<form action="${pageContext.request.contextPath}/result" method="post" enctype="multipart/form-data">
-    <p>
-        <label for="id">id</label>
-        <input type="text" name="id" id="id">
-    </p>
-    <p>
-        <label for="pw">pw</label>
-        <input type="text" name="pw" id="pw">
-    </p>
-    <p>
-        <label for="file">file</label>
-        <input type="file" name="file" id="file">
-    </p>
-    <p>
-        <button type="submit">전송</button>
-    </p>
-</form>
+<h1>메인 페이지</h1>
+<a href="${pageContext.request.contextPath}/upload">링크</a>
 </body>
 </html>

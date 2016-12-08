@@ -2,8 +2,8 @@ package com.hb.sts05.controller;
 
 import com.hb.sts05.model.GuestDao;
 import com.hb.sts05.model.GuestVo;
-import netscape.javascript.JSObject;
 import org.apache.ibatis.session.SqlSession;
+import org.json.simple.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -71,14 +71,20 @@ public class GuestController {
     public void guestLogin(HttpServletRequest request, HttpServletResponse response) {
         String id = request.getParameter("id");
         String pw = request.getParameter("pw");
+        System.out.println(id + ":" + pw);
+        System.out.println("line");
+        JSONObject json = new JSONObject();
+
+        String id1 = (String) json.get("tt");
+        String pw1 = (String) json.get(request.getParameter("pw"));
+        System.out.println(id1 + ":" + pw1);
         PrintWriter out = null;
         try {
             out = response.getWriter();
         } catch (IOException e) {
             e.printStackTrace();
         }
-        System.out.println(id + ":" + pw);
-        if (id.equals("abcd") && pw.equals("1234")) {
+        if (id1.equals("abcd") && pw1.equals("1234")) {
             if (out != null) {
                 out.print("success");
             }
