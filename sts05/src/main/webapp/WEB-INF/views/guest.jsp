@@ -30,13 +30,14 @@
 //                var json = {'id': $("#id").val(), 'pw': $("#pw").val()};
 //                var id = $("#id").val();
 //                var pw = $("#pw").val();
-//                var json = {'id': $("#id").val(), 'pw': $("#pw").val()};
-                var json = new Object();
+                var json = {'id': $("#id").val(), 'pw': $("#pw").val()};
+//                var json = new Object();
 
 //                json.id = $("#id").val();
 //                json.pw = $("#pw").val();
                 json = $('#form1').serialize();
                 alert(json);
+//                alert(JSON.stringify(json));
 
                 $.ajax({
                         url: '/guest/login',
