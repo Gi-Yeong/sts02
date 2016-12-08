@@ -12,6 +12,9 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.List;
 
 @Controller
@@ -65,14 +68,24 @@ public class GuestController {
     }
 
     @RequestMapping(value = "/login", method = RequestMethod.POST)
-    public String guestLogin(HttpServletRequest request) {
+    public void guestLogin(HttpServletRequest request, HttpServletResponse response) {
         String id = request.getParameter("id");
         String pw = request.getParameter("pw");
+        PrintWriter out = null;
+        try {
+            out = response.getWriter();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         System.out.println(id + ":" + pw);
         if (id.equals("abcd") && pw.equals("1234")) {
-            return "success";
+            if (out != null) {
+                out.print("success");
+            }
         } else {
-            return "fail";
+            if (out != null) {
+                out.print("fail");
+            }
         }
     }
 }
