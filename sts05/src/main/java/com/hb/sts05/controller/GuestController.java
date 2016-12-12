@@ -3,9 +3,6 @@ package com.hb.sts05.controller;
 import com.hb.sts05.model.GuestDao;
 import com.hb.sts05.model.GuestVo;
 import org.apache.ibatis.session.SqlSession;
-import org.json.simple.JSONObject;
-import org.json.simple.parser.JSONParser;
-import org.json.simple.parser.ParseException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -13,13 +10,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import javax.servlet.ServletInputStream;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.io.BufferedReader;
+import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.io.UnsupportedEncodingException;
 import java.util.List;
 
 @Controller
@@ -77,6 +72,8 @@ public class GuestController {
         String id = request.getParameter("id");
         String pw = request.getParameter("pw");
 
+//        HttpSession session = request.getSession();
+
         System.out.println("id:" + id + ":" + "pw:" + pw);
 
         PrintWriter out = null;
@@ -87,6 +84,7 @@ public class GuestController {
         }
         if (id.equals("abcd") && pw.equals("1234")) {
             if (out != null) {
+//                session.setAttribute("idok", id);
                 out.print("success");
             }
         } else {

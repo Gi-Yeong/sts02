@@ -26,6 +26,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script type="text/javascript">
         $(document).ready(function () {
+
             $("button").click(function () {
 //                var json = {'id': $("#id").val(), 'pw': $("#pw").val()};
 //                var id = $("#id").val();
@@ -40,11 +41,11 @@
 //                alert(JSON.stringify(json));
 
                 $.ajax({
-                        url: '/guest/login',
-                        type: 'post',
+                        url    : '/guest/login',
+                        type   : 'post',
 //                        dataType: 'text',   // 응답 타입
 //                        data   : {'id': JSON.stringify(id), 'pw': JSON.stringify(pw)},
-                        data: json,
+                        data   : json,
 //                        data   : json,
                         success: function (data) {
                             alert(data);
@@ -52,10 +53,10 @@
                                 $('.login').remove();
 //                                $('.login_ok').html('<h1>로그인 성공</h1>');
                                 $('.login_ok').load('/loginOk.html');
-
-                                window.localStorage.setItem("id", id);
+//                                자바 스크립트 세션 사용, 확인 요망
+                                window.sessionStorage('idok', id);
+                                alert(sessionStorage.getItem('idok'));
 //                                키 가져오기
-//                                var value = window.localStorage.getItem("id");
                             } else if (data == 'fail') {
                                 $('.login').remove();
                                 $('.login_ok').html('<h1>로그인 실패</h1>');
